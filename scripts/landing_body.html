@@ -1,0 +1,925 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#0e0e14]/80 backdrop-blur-xl border-b border-purple-900/30 shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-16 max-w-container-max mx-auto px-gutter-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-2"><img alt="Luminar Logo" class="h-8 w-auto object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]" src="/logo.png"><span class="font-headline-sm text-white tracking-tight font-bold">Luminar</span><span class="font-label-code-sm text-[10px] uppercase px-2 py-0.5 rounded border border-purple-500/30 bg-purple-950/40 text-primary tracking-wider ml-1">Tact v2.4</span></div><nav class="hidden lg:flex items-center gap-1" data-active-classes="bg-purple-900/30 text-white font-semibold rounded-lg border border-purple-500/30"><a aria-current="page" class="px-3 py-1.5 transition-all bg-purple-900/40 text-white font-semibold rounded-lg border border-purple-500/40 text-xs tracking-wide" data-path="simulator" href="#">Simulator</a><a class="px-3 py-1.5 text-xs text-on-surface-variant hover:text-white hover:bg-white/5 rounded-lg transition-all" data-path="tact-diff-engine" href="#">Tact Diff Engine</a><a class="px-3 py-1.5 text-xs text-on-surface-variant hover:text-white hover:bg-white/5 rounded-lg transition-all" data-path="live-scenarios" href="#">Live Scenarios</a><a class="px-3 py-1.5 text-xs text-on-surface-variant hover:text-white hover:bg-white/5 rounded-lg transition-all" data-path="benchmarks" href="#">Benchmarks</a><a class="px-3 py-1.5 text-xs text-on-surface-variant hover:text-white hover:bg-white/5 rounded-lg transition-all" data-path="pricing" href="#">Pricing</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/40 border border-purple-500/30"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4cd7f6] animate-pulse"></span><span class="font-label-code-sm text-[10px] text-secondary font-semibold uppercase tracking-wider">Latent Engine Active</span></div><button class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-gradient-to-r from-primary-container to-purple-600 text-white font-body-md text-xs font-semibold hover:brightness-110 transition-all active:scale-[0.98] shadow-[0_0_20px_rgba(124,58,237,0.4)] border border-purple-400/30 cursor-pointer" type="button">Try 90s Incident</button><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-purple-500/40" src="/logo.png"><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-tertiary rounded-full ring-2 ring-[#0e0e14] shadow-[0_0_6px_#4edea3]"></span></div></div></div></header><main class="w-full pt-16 bg-[#09090b] min-h-screen text-on-surface"><div class="flex flex-col w-full font-body-md text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full max-w-container-max mx-auto px-gutter-desktop pt-16 pb-16 overflow-hidden">
+<!-- Ambient Cybernetic Glow Gradients -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-purple-600/20 via-primary-container/10 to-transparent blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+<div class="absolute top-72 -right-32 w-96 h-96 bg-secondary/10 blur-[100px] pointer-events-none -z-10 rounded-full"></div>
+<div class="absolute top-96 -left-32 w-96 h-96 bg-purple-700/15 blur-[100px] pointer-events-none -z-10 rounded-full"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center pointer-events-auto">
+<!-- Top Header & Dual CTAs Container -->
+<div class="max-w-3xl mx-auto flex flex-col items-center text-center pt-2">
+<!-- Top status pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#161324]/90 backdrop-blur-md border border-purple-500/40 shadow-[0_0_20px_rgba(168,85,247,0.2)]">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-secondary -ml-3.5 shadow-[0_0_6px_#4cd7f6]"></span>
+<span class="font-label-code-sm text-[11px] font-semibold uppercase tracking-wider text-primary">
+        LUMINAR TACT ENGINE V2.4 / LIVE TELEMETRY
+      </span>
+</div>
+<!-- Main headline -->
+<h1 class="font-display-hero text-display-hero md:text-5xl lg:text-6xl text-white tracking-tight mt-6 leading-tight max-w-3xl font-extrabold drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)]">
+      Debug words.<br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-secondary drop-shadow-[0_0_35px_rgba(208,188,255,0.4)]">Deploy impact.</span>
+</h1>
+<!-- Dual Action CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
+<button class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-primary-container via-purple-600 to-indigo-600 text-white font-headline-sm text-sm font-semibold hover:brightness-110 transition-all duration-200 active:scale-[0.98] shadow-[0_0_30px_rgba(124,58,237,0.5)] border border-purple-400/40 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-xl">rocket_launch</span>
+<span class="">Launch Simulator</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#13121d]/90 backdrop-blur-md text-white border border-purple-500/30 font-body-md text-xs font-semibold hover:bg-[#1a1728] hover:border-purple-400/60 transition-all duration-200 shadow-md cursor-pointer" type="button">
+<span class="material-symbols-outlined text-base text-primary">explore</span>
+<span class="">Explore Scenarios</span>
+</button>
+</div>
+</div>
+<!-- Dedicated Three.js 3D Kinetic Tact Core Animation Stage surrounded by 4 Telemetry Chips -->
+<div class="w-full h-[520px] max-w-4xl mx-auto relative z-10 my-4 flex items-center justify-center overflow-visible select-none" id="tact-kinetic-container">
+<!-- Ambient Radial Glow Underlay -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-600/25 via-primary-container/20 to-secondary/25 blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+<!-- Fallback / Underlay SVG (always vividly visible even prior to script execution) -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40 mix-blend-screen" id="tact-fallback-visual">
+<svg class="w-80 h-80 filter drop-shadow-[0_0_35px_rgba(168,85,247,0.7)] animate-[spin_30s_linear_infinite]" fill="none" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient cx="50%" cy="50%" id="fallbackGlow" r="50%">
+<stop offset="0%" stop-color="#d0bcff" stop-opacity="0.9"></stop>
+<stop offset="40%" stop-color="#7c3aed" stop-opacity="0.6"></stop>
+<stop offset="80%" stop-color="#4cd7f6" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="transparent" stop-opacity="0"></stop>
+</radialGradient>
+</defs>
+<circle cx="200" cy="200" r="175" stroke="rgba(168, 85, 247, 0.2)" stroke-dasharray="4 8" stroke-width="1.5"></circle>
+<circle cx="200" cy="200" r="145" stroke="rgba(76, 215, 246, 0.3)" stroke-dasharray="6 6" stroke-width="1.5"></circle>
+<ellipse cx="200" cy="200" rx="145" ry="55" stroke="#4cd7f6" stroke-width="2" transform="rotate(-28 200 200)"></ellipse>
+<ellipse cx="200" cy="200" rx="145" ry="55" stroke="#a855f7" stroke-width="2" transform="rotate(38 200 200)"></ellipse>
+<circle cx="200" cy="200" fill="url(#fallbackGlow)" r="70"></circle>
+</svg>
+</div>
+<!-- Exact Three.js Canvas Element -->
+<canvas class="w-full h-full block relative z-10 cursor-grab active:cursor-grabbing" id="tact-kinetic-canvas" width="1120" height="650" style="width: 896px; height: 520px;"></canvas>
+<!-- Center Tact-Core Inset Badge -->
+<div class="absolute bottom-6 z-20 px-3.5 py-1 rounded-full bg-[#12101e]/90 border border-purple-500/40 shadow-[0_0_15px_rgba(124,58,237,0.4)] backdrop-blur flex items-center gap-1.5 pointer-events-auto">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-code-sm text-[10px] text-primary font-bold tracking-wider uppercase">TACT-CORE ACTIVE</span>
+</div>
+<!-- 4 Telemetry Chips Surrounding the 3D Core -->
+<!-- Chip 1: Top Left -->
+<div class="hidden sm:flex items-center gap-2 absolute top-6 left-2 lg:left-6 z-20 px-4 py-2.5 rounded-xl bg-[#110f1c]/90 backdrop-blur-md shadow-[0_0_25px_rgba(168,85,247,0.25)] border border-purple-500/40 text-xs font-label-code-sm pointer-events-auto transition-transform hover:-translate-y-1 duration-200">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_10px_#d0bcff] animate-pulse"></span>
+<span class="text-white font-semibold">MODEL CORE: Tact v2.4</span>
+<span class="text-secondary font-bold bg-secondary/15 px-2 py-0.5 rounded border border-secondary/40 shadow-[0_0_10px_rgba(76,215,246,0.3)]">98.4%</span>
+</div>
+<!-- Chip 2: Top Right -->
+<div class="hidden sm:flex items-center gap-2 absolute top-6 right-2 lg:right-6 z-20 px-4 py-2.5 rounded-xl bg-[#110f1c]/90 backdrop-blur-md shadow-[0_0_25px_rgba(239,68,68,0.25)] border border-error/50 text-xs font-label-code-sm pointer-events-auto transition-transform hover:-translate-y-1 duration-200">
+<span class="material-symbols-outlined text-base text-error drop-shadow-[0_0_8px_rgba(255,180,171,0.6)]">crisis_alert</span>
+<span class="text-error font-bold uppercase tracking-wider">CALIBRATED FOR P0 OUTAGES</span>
+</div>
+<!-- Chip 3: Bottom Left -->
+<div class="hidden sm:flex items-center gap-2 absolute bottom-6 left-2 lg:left-6 z-20 px-4 py-2.5 rounded-xl bg-[#110f1c]/90 backdrop-blur-md shadow-[0_0_25px_rgba(76,215,246,0.25)] border border-secondary/40 text-xs font-label-code-sm pointer-events-auto transition-transform hover:-translate-y-1 duration-200">
+<span class="material-symbols-outlined text-base text-secondary drop-shadow-[0_0_8px_#4cd7f6]">speed</span>
+<span class="text-on-surface-variant">ADVERSARIAL LATENCY:</span>
+<span class="text-secondary font-bold font-label-code-md">0.88ms</span>
+</div>
+<!-- Chip 4: Bottom Right -->
+<div class="hidden sm:flex items-center gap-2 absolute bottom-6 right-2 lg:right-6 z-20 px-4 py-2.5 rounded-xl bg-[#110f1c]/90 backdrop-blur-md shadow-[0_0_25px_rgba(78,222,163,0.25)] border border-tertiary/40 text-xs font-label-code-sm pointer-events-auto transition-transform hover:-translate-y-1 duration-200">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_8px_#4edea3] animate-pulse"></span>
+<span class="text-tertiary font-semibold uppercase tracking-wider">KINETIC MESH DYNAMIC</span>
+</div>
+</div>
+<!-- Bottom Subheadline cleanly floating below 3D base -->
+<div class="max-w-xl mx-auto text-center pb-2 z-10 relative">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+      AI-calibrated speech simulation for engineering leaders under fire.
+    </p>
+</div>
+</div>
+</section>
+<!-- TECH PARTNER LOGO BAR -->
+<section class="w-full bg-[#0d0c14]/90 border-y border-purple-900/20 py-10 my-4 overflow-hidden relative group/ticker"><style>
+@keyframes marqueeTrackScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-infinite-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marqueeTrackScroll 28s linear infinite;
+}
+.group\/ticker:hover .marquee-infinite-track {
+  animation-play-state: paused;
+}
+.logo-item {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.65;
+}
+.logo-item:hover {
+  opacity: 1;
+}
+.logo-stripe:hover { color: #a78bfa !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(167,139,250,0.6)); }
+.logo-github:hover { color: #c084fc !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(192,132,252,0.6)); }
+.logo-aws:hover { color: #fbbf24 !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(251,191,36,0.6)); }
+.logo-google:hover { color: #60a5fa !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(96,165,250,0.6)); }
+.logo-atlassian:hover { color: #38bdf8 !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(56,189,248,0.6)); }
+.logo-cloudflare:hover { color: #fb923c !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(251,146,60,0.6)); }
+.logo-linear:hover { color: #818cf8 !important; transform: translateY(-2px) scale(1.05); filter: drop-shadow(0 0 12px rgba(129,140,248,0.6)); }
+.logo-linear:hover .linear-dot { background-color: #818cf8 !important; transform: scale(1.2); }
+</style>
+<div class="max-w-container-max mx-auto px-gutter-desktop mb-8">
+<p class="text-center font-label-code-sm text-xs text-on-surface-variant/80 tracking-widest uppercase font-semibold">
+  Calibrated Against Tactics From Engineering Leaders At
+</p>
+</div>
+<div class="relative w-full overflow-hidden">
+<!-- Edge Fade Overlays -->
+<div class="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none bg-gradient-to-r from-[#09090b] via-[#09090b]/80 to-transparent"></div>
+<div class="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none bg-gradient-to-l from-[#09090b] via-[#09090b]/80 to-transparent"></div>
+<!-- Seamless Double Track Marquee -->
+<div class="marquee-infinite-track items-center py-2">
+<!-- Sub-block 1 -->
+<div class="flex items-center gap-16 px-8 select-none text-white/70 flex-shrink-0">
+<div class="logo-item logo-stripe flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-tighter">stripe</span>
+</div>
+<div class="logo-item logo-github flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+<span class="font-headline-md font-bold">GitHub</span>
+</div>
+<div class="logo-item logo-aws flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-wider">AWS</span>
+</div>
+<div class="logo-item logo-google flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-semibold tracking-tight">Google</span>
+</div>
+<div class="logo-item logo-atlassian flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-bold tracking-normal">Atlassian</span>
+</div>
+<div class="logo-item logo-cloudflare flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-extrabold tracking-tight">CLOUDFLARE</span>
+</div>
+<div class="logo-item logo-linear flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="linear-dot w-3.5 h-3.5 rounded-full bg-current inline-block transition-transform duration-300"></span>
+<span class="font-headline-md font-bold">Linear</span>
+</div>
+</div>
+<!-- Sub-block 1 Duplicate for wide screens -->
+<div class="flex items-center gap-16 px-8 select-none text-white/70 flex-shrink-0">
+<div class="logo-item logo-stripe flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-tighter">stripe</span>
+</div>
+<div class="logo-item logo-github flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+<span class="font-headline-md font-bold">GitHub</span>
+</div>
+<div class="logo-item logo-aws flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-wider">AWS</span>
+</div>
+<div class="logo-item logo-google flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-semibold tracking-tight">Google</span>
+</div>
+<div class="logo-item logo-atlassian flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-bold tracking-normal">Atlassian</span>
+</div>
+<div class="logo-item logo-cloudflare flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-extrabold tracking-tight">CLOUDFLARE</span>
+</div>
+<div class="logo-item logo-linear flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="linear-dot w-3.5 h-3.5 rounded-full bg-current inline-block transition-transform duration-300"></span>
+<span class="font-headline-md font-bold">Linear</span>
+</div>
+</div>
+<!-- Sub-block 2 (Identical mirror for translateX(-50%) seamless loop) -->
+<div aria-hidden="true" class="flex items-center gap-16 px-8 select-none text-white/70 flex-shrink-0">
+<div class="logo-item logo-stripe flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-tighter">stripe</span>
+</div>
+<div class="logo-item logo-github flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+<span class="font-headline-md font-bold">GitHub</span>
+</div>
+<div class="logo-item logo-aws flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-wider">AWS</span>
+</div>
+<div class="logo-item logo-google flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-semibold tracking-tight">Google</span>
+</div>
+<div class="logo-item logo-atlassian flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-bold tracking-normal">Atlassian</span>
+</div>
+<div class="logo-item logo-cloudflare flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-extrabold tracking-tight">CLOUDFLARE</span>
+</div>
+<div class="logo-item logo-linear flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="linear-dot w-3.5 h-3.5 rounded-full bg-current inline-block transition-transform duration-300"></span>
+<span class="font-headline-md font-bold">Linear</span>
+</div>
+</div>
+<!-- Sub-block 2 Duplicate for wide screens -->
+<div aria-hidden="true" class="flex items-center gap-16 px-8 select-none text-white/70 flex-shrink-0">
+<div class="logo-item logo-stripe flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-tighter">stripe</span>
+</div>
+<div class="logo-item logo-github flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+<span class="font-headline-md font-bold">GitHub</span>
+</div>
+<div class="logo-item logo-aws flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-black tracking-wider">AWS</span>
+</div>
+<div class="logo-item logo-google flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-semibold tracking-tight">Google</span>
+</div>
+<div class="logo-item logo-atlassian flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-bold tracking-normal">Atlassian</span>
+</div>
+<div class="logo-item logo-cloudflare flex items-center justify-center cursor-pointer">
+<span class="font-headline-md font-extrabold tracking-tight">CLOUDFLARE</span>
+</div>
+<div class="logo-item logo-linear flex items-center justify-center gap-1.5 cursor-pointer">
+<span class="linear-dot w-3.5 h-3.5 rounded-full bg-current inline-block transition-transform duration-300"></span>
+<span class="font-headline-md font-bold">Linear</span>
+</div>
+</div>
+</div>
+</div></section>
+<!-- LIVE EXAMPLES & LIVE SIMULATION SHOWCASE SECTION -->
+<section class="w-full max-w-container-max mx-auto px-gutter-desktop py-20" id="live-simulation-showcase">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 font-label-code-sm text-xs font-bold text-primary uppercase tracking-wider mb-3">
+      MICROSECOND HEURISTIC MODULATION
+    </div>
+<h2 class="font-headline-lg text-headline-lg text-white tracking-tight font-bold">
+      Live AST Speech Refactoring &amp; Incident Defense
+    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+      Watch raw defensive panic transform into surgical architectural diplomacy in microsecond latency benchmarks.
+    </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: AST Git Diff Terminal -->
+<div class="lg:col-span-7 bg-[#0b0a12] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden border border-purple-900/40 transition-all duration-500 ease-out [perspective:1000px] hover:[transform:rotateY(10deg)_rotateX(-6deg)] cursor-pointer group duration-300 hover:-translate-y-1.5 hover:border-purple-500/50 hover:shadow-[0_10px_30px_-10px_rgba(168,85,247,0.3)]" id="tact-terminal">
+<!-- Terminal OS Top Chrome -->
+<div class="px-5 py-3.5 bg-[#12101e] flex items-center justify-between border-b border-purple-900/30">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-red-500/80 inline-block shadow-[0_0_8px_rgba(239,68,68,0.5)]"></span>
+<span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block shadow-[0_0_8px_rgba(245,158,11,0.5)]"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
+<span class="ml-2 font-label-code-sm text-xs text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">description</span>
+  diff://p0_incident_bridge.log
+</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-tertiary font-label-code-sm text-[10px] font-semibold tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3] animate-ping"></span>
+  STAGING // ACTIVE
+</span>
+</div>
+</div>
+<!-- Speech Git Diff Visual Box -->
+<div class="p-6 space-y-4">
+<!-- Red Strike-Through Flawed Response -->
+<div class="p-4 rounded-xl bg-red-950/25 border border-red-500/30 transition-all">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-code-sm text-[11px] font-semibold text-red-400 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">cancel</span>
+  - [Speech Raw: Defensive Tone]
+</span>
+<span class="font-label-code-sm text-[10px] px-2 py-0.5 rounded bg-red-900/50 text-red-300 font-bold border border-red-700/40">
+  Tact Score: 32% (Critical Flaw)
+</span>
+</div>
+<p class="font-label-code-md text-xs text-red-300/80 leading-relaxed pl-3 line-through">
+  "The old code is trash, who approved this PR? If we rollback now, we miss Q3 release goals completely."
+</p>
+<div class="mt-2.5 text-[11px] text-red-400 flex items-center gap-1 pl-3 font-body-sm font-medium">
+<span class="material-symbols-outlined text-xs">warning</span>
+  Triggers defensive reaction • Low psychological safety rating (-42pts)
+</div>
+</div>
+<!-- Glowing Purple Executive Refactor -->
+<div class="p-4 rounded-xl bg-purple-950/35 border border-purple-500/40 shadow-[0_0_30px_rgba(124,58,237,0.15)] transition-all relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-primary-container/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-code-sm text-[11px] font-semibold text-purple-300 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">check_circle</span>
+  + [Speech Refactored: Architectural Leverage]
+</span>
+<span class="font-label-code-sm text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-tertiary font-bold border border-emerald-500/40">
+  Tact Score: 94% (Staff Grade)
+</span>
+</div>
+<p class="font-label-code-md text-xs text-white font-semibold leading-relaxed pl-3 bg-[#161226]/80 p-3 rounded-lg border border-purple-500/30">
+  "I can take this hotfix if we reprioritize Task #402 and stage the cache eviction with canary validation."
+</p>
+<div class="mt-3 flex items-center justify-between pl-3 text-xs">
+<span class="text-tertiary font-label-code-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+  Maintains momentum • Resolves blast radius (+62pts)
+</span>
+<span class="font-label-code-sm text-[10px] text-primary font-bold uppercase tracking-wider bg-purple-900/50 border border-purple-500/40 px-2 py-0.5 rounded">
+  Consensus Achieved
+</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Micro-Bar -->
+<div class="px-5 py-3 bg-[#12101e]/90 flex items-center justify-between text-xs font-label-code-sm text-on-surface-variant border-t border-purple-900/30">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span>
+  Adversary Latent Weight: 0.884 ms
+</span>
+<span class="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
+  View Simulation Trace <span class="material-symbols-outlined text-xs">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Right Column: Acoustic Cadence Profiler -->
+<div class="lg:col-span-5 bg-[#0b0a12] rounded-2xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-purple-900/40 flex flex-col justify-between space-y-6 transition-all duration-300 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(124,58,237,0.25)] group ease-out hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(168,85,247,0.3)] cursor-pointer" id="acoustic-cadence-card">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-purple-900/30">
+<div class="font-label-code-sm text-xs uppercase font-bold text-on-surface-variant tracking-wider">
+  Acoustic Cadence Profiler
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-label-code-sm text-tertiary font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3] animate-pulse"></span>
+  96kHz Real-time
+</span>
+</div>
+<div class="flex items-center justify-between p-3.5 mt-4 rounded-xl bg-[#141222] border border-purple-500/20">
+<div class="flex items-center gap-3">
+<div class="relative w-12 h-12 rounded-xl overflow-hidden ring-2 ring-purple-500/40">
+<img class="w-full h-full object-cover" data-alt="Corporate headshot of Dr. Marcus Vance, a senior architectural reviewer with skeptical expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRqfiXEQZgO9-WTCsde1gAvuuDQSpLSlByQCZ5Fb59C4vYmdKa5T8l-ggFDBFqcdRwS0HD_QC4Ul1wcv_oPVI3PWe2lIgW5Ha45Om2QBvT2d5v90n4HZldG3xkEMyaryYC_DA6GN3P1hA6e53Okv9qxgRplgpI40UjnH2Y7xiz_i1UUtgr0DjIsSKJ0wrcby2Fb3xE2tpfWdcTOYbdehHMwBLhu7FOgoXnufiEUkvpeHu2ELTRa8cZw">
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-amber-500 ring-2 ring-[#141222]"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-sm font-bold text-white">Dr. Marcus Vance</span>
+<span class="font-label-code-sm text-[10px] px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 font-bold border border-amber-600/40">Skeptical VP</span>
+</div>
+<p class="text-xs text-on-surface-variant font-body-sm mt-0.5">Principal Architect • Multi-Cloud Systems</p>
+</div>
+</div>
+<!-- Tension dial -->
+<div class="flex items-center gap-2 pr-1">
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-11 h-11 -rotate-90" viewBox="0 0 36 36">
+<path class="text-white/10" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-amber-500 transition-all duration-1000 ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="85, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute text-[10px] font-label-code-sm font-bold text-white">85%</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Audio Bars Visualizer -->
+<div class="mt-4 p-4 rounded-xl bg-[#141222] border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 relative overflow-hidden group/visualizer" id="tremor-visualizer-container">
+<style>
+@keyframes barShootUp {
+  0% { transform: scaleY(0); transform-origin: bottom; opacity: 0.3; }
+  70% { transform: scaleY(1.15); transform-origin: bottom; opacity: 1; }
+  100% { transform: scaleY(1); transform-origin: bottom; opacity: 1; }
+}
+@keyframes barDanceHover {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1.25); filter: brightness(1.25) drop-shadow(0 0 8px currentColor); }
+}
+.eq-bar {
+  animation: barShootUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  transform-origin: bottom;
+  transition: height 0.25s ease, transform 0.2s ease, filter 0.2s ease;
+}
+#acoustic-cadence-card:hover .eq-bar, .group\/visualizer:hover .eq-bar {
+  animation: barDanceHover 0.7s infinite ease-in-out alternate;
+}
+#acoustic-cadence-card:hover .eq-bar:nth-child(2n), .group\/visualizer:hover .eq-bar:nth-child(2n) {
+  animation-duration: 0.55s;
+}
+#acoustic-cadence-card:hover .eq-bar:nth-child(3n), .group\/visualizer:hover .eq-bar:nth-child(3n) {
+  animation-duration: 0.85s;
+}
+#acoustic-cadence-card:hover .eq-bar:nth-child(4n), .group\/visualizer:hover .eq-bar:nth-child(4n) {
+  animation-duration: 0.65s;
+}
+</style>
+<div class="flex items-center justify-between text-xs font-label-code-sm text-on-surface-variant mb-2">
+<span class="flex items-center gap-1.5">
+  Voice Tremor Analysis
+  <span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">graphic_eq</span> Zero Inflection Tilt
+</span>
+</div>
+<div class="flex items-end justify-between h-14 px-2 pt-2 bg-[#090810] rounded-lg border border-purple-900/30 overflow-hidden relative" id="audio-bars-track">
+<div class="eq-bar w-1 bg-primary-container shadow-[0_0_6px_#7c3aed] rounded-t h-4"></div>
+<div class="eq-bar w-1 bg-primary shadow-[0_0_6px_#d0bcff] rounded-t h-8"></div>
+<div class="eq-bar w-1 bg-primary-container shadow-[0_0_6px_#7c3aed] rounded-t h-12"></div>
+<div class="eq-bar w-1 bg-primary shadow-[0_0_6px_#d0bcff] rounded-t h-7"></div>
+<div class="eq-bar w-1 bg-secondary shadow-[0_0_6px_#4cd7f6] rounded-t h-4"></div>
+<div class="eq-bar w-1 bg-secondary shadow-[0_0_6px_#4cd7f6] rounded-t h-10"></div>
+<div class="eq-bar w-1 bg-primary-container shadow-[0_0_6px_#7c3aed] rounded-t h-14"></div>
+<div class="eq-bar w-1 bg-secondary shadow-[0_0_6px_#4cd7f6] rounded-t h-6"></div>
+<div class="eq-bar w-1 bg-primary-container shadow-[0_0_6px_#7c3aed] rounded-t h-11"></div>
+<div class="eq-bar w-1 bg-primary shadow-[0_0_6px_#d0bcff] rounded-t h-7"></div>
+<div class="eq-bar w-1 bg-secondary shadow-[0_0_6px_#4cd7f6] rounded-t h-12"></div>
+<div class="eq-bar w-1 bg-primary-container shadow-[0_0_6px_#7c3aed] rounded-t h-5"></div>
+<div class="eq-bar w-1 bg-primary shadow-[0_0_6px_#d0bcff] rounded-t h-9"></div>
+<div class="eq-bar w-1 bg-secondary shadow-[0_0_6px_#4cd7f6] rounded-t h-6"></div>
+<div class="eq-bar w-1 bg-tertiary shadow-[0_0_6px_#4edea3] rounded-t h-8"></div>
+<div class="eq-bar w-1 bg-tertiary shadow-[0_0_6px_#4edea3] rounded-t h-4"></div>
+</div>
+<div class="mt-2.5 flex items-center justify-between text-[11px] font-label-code-sm text-on-surface-variant">
+<span class="">Cadence: 138 wpm</span>
+<span class="">Decibel: -18.2 dB (Calibrated)</span>
+</div>
+</div>
+</div>
+<!-- Hold-to-Talk 96kHz Button -->
+<div>
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-primary-container via-purple-600 to-indigo-600 text-white font-headline-sm text-xs font-semibold flex items-center justify-center gap-2 hover:brightness-110 transition-all active:scale-[0.98] shadow-[0_0_25px_rgba(124,58,237,0.4)] border border-purple-400/40 cursor-pointer" id="showcase-mic-btn" type="button"><span class="material-symbols-outlined text-base">mic</span> <span class="">HOLD-TO-TALK 96kHz TEST</span></button>
+<p class="text-center text-xs text-on-surface-variant font-label-code-sm mt-2">
+  Press or hold to inject vocal counter-argument against Dr. Vance
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PINNED INTERACTIVE PIPELINE / COMBAT CYCLE (4 STAGES) -->
+<section class="w-full max-w-container-max mx-auto px-gutter-desktop py-20">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 font-label-code-sm text-xs text-primary font-semibold uppercase tracking-wider mb-3">
+  Engine Architecture
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white tracking-tight font-bold">
+  The 4-Stage High-Stakes Combat Cycle
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+  From sudden production collapse to boardroom de-escalation: systematically build real executive verbal muscle memory.
+</p>
+</div>
+<!-- 4 Stage Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- STAGE 01: Diagnostic Sandbox -->
+<div class="group relative bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(124,58,237,0.25)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-code-sm text-xs px-2.5 py-1 rounded bg-purple-950/80 border border-purple-500/40 text-primary font-bold">
+  STAGE 01
+</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_#ba1a1a] animate-ping"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Diagnostic Sandbox</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+  P0 outage triggers. AI injects server latency spikes, frustrated executives, and cross-functional panic.
+</p>
+<!-- 90s Circular SVG Outage Gauge -->
+<div class="bg-[#141222] border border-purple-900/30 rounded-xl p-4 flex flex-col items-center justify-center relative overflow-hidden">
+<div class="relative w-28 h-28 flex items-center justify-center my-2">
+<svg class="w-28 h-28 -rotate-90" viewBox="0 0 100 100">
+<circle class="text-white/10" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary-container transition-all duration-700 filter drop-shadow-[0_0_6px_#7c3aed]" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="66" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-label-code-lg text-xl font-bold text-white" id="countdown-val">00:07</span>
+<span class="text-[9px] font-label-code-sm text-error font-semibold uppercase">Incident Ticking</span>
+</div>
+</div>
+<div class="w-full mt-2 pt-2 flex items-center justify-between text-[11px] font-label-code-sm text-on-surface-variant">
+<span class="">Database Cluster: US-East</span>
+<span class="text-error font-semibold">99.4% Latency</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-xs text-on-surface-variant border-t border-purple-900/20">
+<span class="font-label-code-sm">Stress: High Load</span>
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- STAGE 02: Tactical Toolkit -->
+<div class="group relative bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(76,215,246,0.25)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-code-sm text-xs px-2.5 py-1 rounded bg-cyan-950/80 border border-secondary/40 text-secondary font-bold">
+  STAGE 02
+</span>
+<span class="material-symbols-outlined text-secondary text-sm">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Tactical Toolkit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+  Interactive battle cards provide calibrated phrasing frameworks tailored to corporate dynamics.
+</p>
+<!-- Interactive Tactics Stack -->
+<div class="space-y-2">
+<div class="p-2.5 rounded-lg bg-[#141222] border border-purple-900/30 hover:border-purple-500/50 transition-colors cursor-pointer flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary">anchor</span>
+<span class="font-label-code-sm text-xs font-semibold text-white">The Blameless Anchor</span>
+</div>
+<span class="text-[10px] font-label-code-sm text-primary">Active</span>
+</div>
+<div class="p-2.5 rounded-lg bg-[#141222] border border-purple-900/30 hover:border-secondary/50 transition-colors cursor-pointer flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-secondary">alt_route</span>
+<span class="font-label-code-sm text-xs font-semibold text-white">Strategic Deflection</span>
+</div>
+<span class="text-[10px] font-label-code-sm text-on-surface-variant">Ready</span>
+</div>
+<div class="p-2.5 rounded-lg bg-[#141222] border border-purple-900/30 hover:border-tertiary/50 transition-colors cursor-pointer flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary">hub</span>
+<span class="font-label-code-sm text-xs font-semibold text-white">Consensus Pivot</span>
+</div>
+<span class="text-[10px] font-label-code-sm text-on-surface-variant">Ready</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-xs text-on-surface-variant border-t border-purple-900/20">
+<span class="font-label-code-sm">Heuristics: 38 Patterns</span>
+<span class="material-symbols-outlined text-sm text-secondary">arrow_forward</span>
+</div>
+</div>
+<!-- STAGE 03: AI Roleplay Room -->
+<div class="group relative bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(78,222,163,0.25)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-code-sm text-xs px-2.5 py-1 rounded bg-emerald-950/80 border border-tertiary/40 text-tertiary font-bold">
+  STAGE 03
+</span>
+<span class="material-symbols-outlined text-tertiary text-sm">record_voice_over</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">AI Roleplay Room</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+  Voice-enabled confrontation with low-latency LLM avatars that evaluate tone, cadence, and empathy in real-time.
+</p>
+<div class="bg-[#141222] border border-purple-900/30 rounded-xl p-3">
+<div class="flex items-center gap-2 mb-2 pb-2 border-b border-purple-900/20">
+<div class="w-6 h-6 rounded-full overflow-hidden bg-purple-900/40 ring-1 ring-purple-500/30">
+<img class="w-full h-full object-cover" data-alt="Avatar icon of an adversarial executive vice president in a sleek high tech corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUtL-hoHm8qGCI9iY5aBWiE7w0rGbuiW964WjUx1cKXbPi9_Ni6wQlg4J2uGFtm994_7gGll4bgwM-86a6w9Lbnl6_8kVNLFii7XUMfMuk_FBvfUUEwO6Kfneky0OrZcJXwrt8Z8_0FCYmMOQeu4pUJcv_2LgyyIqf_N-H0fwnxP3m11nj5ZbF6rJZ3ganaDqM28bm4_mutdvQpcTTuHoX6QrREhMuYKeTwHIKWwg562dCnsU7GULs0g">
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-xs font-headline-sm text-white truncate">EVP Infrastructure (AI)</p>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3] animate-pulse"></span>
+</div>
+<div class="flex items-end justify-between h-12 px-2 pt-2 bg-[#090810] rounded-lg border border-purple-900/30">
+<div class="w-1 bg-primary-container rounded-t h-4 animate-pulse"></div>
+<div class="w-1 bg-primary rounded-t h-7 animate-pulse [animation-delay:100ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-10 animate-pulse [animation-delay:200ms]"></div>
+<div class="w-1 bg-primary rounded-t h-6 animate-pulse [animation-delay:150ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-3 animate-pulse [animation-delay:300ms]"></div>
+<div class="w-1 bg-secondary rounded-t h-8 animate-pulse [animation-delay:75ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-11 animate-pulse [animation-delay:250ms]"></div>
+<div class="w-1 bg-secondary rounded-t h-5 animate-pulse [animation-delay:180ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-9 animate-pulse [animation-delay:90ms]"></div>
+<div class="w-1 bg-primary rounded-t h-6 animate-pulse [animation-delay:220ms]"></div>
+<div class="w-1 bg-secondary rounded-t h-10 animate-pulse [animation-delay:120ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-4 animate-pulse [animation-delay:320ms]"></div>
+<div class="w-1 bg-primary rounded-t h-8 animate-pulse [animation-delay:140ms]"></div>
+<div class="w-1 bg-secondary rounded-t h-5 animate-pulse [animation-delay:210ms]"></div>
+<div class="w-1 bg-primary-container rounded-t h-7 animate-pulse [animation-delay:50ms]"></div>
+<div class="w-1 bg-tertiary rounded-t h-3 animate-pulse [animation-delay:280ms]"></div>
+</div>
+<div class="mt-2 text-center text-[10px] font-label-code-sm text-on-surface-variant">
+  Cadence: 142 wpm • Decibel: Stable
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-xs text-on-surface-variant border-t border-purple-900/20">
+<span class="font-label-code-sm">Acoustic Latency: 220ms</span>
+<span class="material-symbols-outlined text-sm text-tertiary">arrow_forward</span>
+</div>
+</div>
+<!-- STAGE 04: Post-Mortem & Score Jump -->
+<div class="group relative bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.25)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-code-sm text-xs px-2.5 py-1 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">
+  STAGE 04
+</span>
+<span class="material-symbols-outlined text-amber-400 text-sm">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Telemetry Jump</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+  Immediate multi-vector debriefing with an animated tact jump from junior defensiveness to executive influence.
+</p>
+<div class="bg-[#141222] border border-purple-900/30 rounded-xl p-4 text-center">
+<div class="flex items-center justify-center gap-3 mb-2">
+<div class="flex flex-col">
+<span class="text-xs font-label-code-sm text-on-surface-variant/70 line-through">Score 38</span>
+<span class="text-[10px] text-error font-medium">Defensive</span>
+</div>
+<span class="material-symbols-outlined text-base text-tertiary">trending_flat</span>
+<div class="flex flex-col">
+<span class="text-2xl font-label-code-lg font-black text-tertiary drop-shadow-[0_0_8px_#4edea3]">Score 92</span>
+<span class="text-[10px] text-tertiary font-semibold">Staff Architect</span>
+</div>
+</div>
+<div class="space-y-1.5 text-left pt-2 border-t border-purple-900/20">
+<div>
+<div class="flex justify-between text-[10px] font-label-code-sm text-on-surface-variant mb-0.5">
+<span class="">Psychological Safety</span>
+<span class="font-semibold text-white">96%</span>
+</div>
+<div class="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[96%] shadow-[0_0_6px_#4edea3]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[10px] font-label-code-sm text-on-surface-variant mb-0.5">
+<span class="">Political Leverage</span>
+<span class="font-semibold text-white">91%</span>
+</div>
+<div class="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[91%] shadow-[0_0_6px_#d0bcff]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-xs text-on-surface-variant border-t border-purple-900/20">
+<span class="font-label-code-sm text-amber-300">+54pt Net Gain</span>
+<span class="material-symbols-outlined text-sm text-amber-400">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- THEMATIC VISUAL BENTO GRID (3 CORE CAPABILITY CARDS) -->
+<section class="w-full max-w-container-max mx-auto px-gutter-desktop py-12">
+<div class="mb-12">
+<div class="font-label-code-sm text-xs text-primary uppercase font-semibold tracking-wider">
+  Instrumented Capabilities
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white tracking-tight mt-2 font-bold">
+  Built for Engineering Organizations That Cannot Afford Missteps
+</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Card 1: Push-to-Talk Latency Testing -->
+<div class="lg:col-span-5 bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-3xl p-8 shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden relative group ease-out hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(168,85,247,0.3)] cursor-pointer">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-2xl bg-purple-950/80 border border-purple-500/40 flex items-center justify-center text-primary mb-6 shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+<span class="material-symbols-outlined text-2xl">mic</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-3 font-semibold">
+  Real-Time Push-to-Talk Latency Testing (&lt;220ms)
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+  Speak directly into your microphone. Luminar assesses inflection tremor, defensive vocal micro-frequencies, and conversational interrupts under fire.
+</p>
+</div>
+<!-- Dual-Monitor Visual Preview -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-[#141222] border border-purple-900/40 p-4 mt-2">
+<div class="aspect-video w-full rounded-xl overflow-hidden shadow-inner relative border border-white/5">
+<img class="w-full h-full object-cover filter brightness-90 contrast-110" data-alt="High quality overhead architectural photo of a modern software engineer desk with curved ultra-wide monitors displaying live telemetry graphs, mechanical keyboard, soft purple LED bias lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFylVfmcn-zn-xneBGzh5l-0b38E6Crgf9ypITRkfR7aCklpHGzV5Q7hhQzHm-_W_AbwDb6EcVTZVv1yAGkIPN_wO0UjUcs7Ri1zUIIYqjExOtwGNjHB6HaHRrOySSJxulwe_BlAULHer7jEqwirJBNvkF9j2u3TiQaZeEDH8unmi6GPSCFi0xZDm8hfnP29WuQRga31ROcoei3KGORN6CZP5VLAg-S1bZKZRC6xwkkJhClnE6j1wj3w">
+<div class="absolute inset-0 bg-gradient-to-t from-[#09090b]/90 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center justify-between w-full text-white">
+<span class="font-label-code-sm text-xs flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#ef4444] animate-ping"></span>
+  RECORDING (SPACEBAR HOLD)
+</span>
+<span class="font-label-code-sm text-xs bg-black/60 border border-white/10 px-2 py-0.5 rounded backdrop-blur">
+  96 kHz / 24-bit
+</span>
+</div>
+</div>
+</div>
+<!-- Interactive Mic Button -->
+<div class="mt-4 flex items-center justify-center">
+<button class="w-full py-3 rounded-xl bg-gradient-to-r from-primary-container to-purple-600 text-white font-headline-sm text-xs font-semibold flex items-center justify-center gap-2 hover:brightness-110 transition-all active:scale-95 shadow-[0_0_20px_rgba(124,58,237,0.4)] border border-purple-400/40 cursor-pointer" id="interactive-mic-btn" type="button"><span class="material-symbols-outlined text-base">mic_none</span> HOLD SPACEBAR OR CLICK TO SIMULATE VOICE</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Git Split Diff Console -->
+<div class="lg:col-span-7 bg-[#0e0d17] border border-purple-500/20 hover:border-purple-500/50 rounded-3xl p-8 shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group ease-out hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(168,85,247,0.3)] cursor-pointer">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-12 h-12 rounded-2xl bg-cyan-950/80 border border-secondary/40 flex items-center justify-center text-secondary shadow-[0_0_15px_rgba(76,215,246,0.3)]">
+<span class="material-symbols-outlined text-2xl">difference</span>
+</div>
+<span class="font-label-code-sm text-xs px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 font-semibold text-primary">
+  SEMANTIC DIFF v3.1
+</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-3 font-semibold">
+  Real-Time Semantic Speech Refactor Engine (32% → 94%)
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+  Just like syntax highlighters catch null-pointer exceptions, our AST parser transforms abrasive colloquialisms into consensus-driving staff-level formulations.
+</p>
+<!-- Git Split-Diff Preview Component -->
+<div class="rounded-xl overflow-hidden font-label-code-md text-xs border border-purple-900/30">
+<div class="bg-[#151322] px-4 py-2 flex items-center justify-between text-on-surface-variant font-label-code-sm border-b border-purple-900/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">commit</span>
+<span class="">commit 7f49c02: refactor(tone): decouple blame from timeline slip</span>
+</div>
+<span class="text-tertiary">+3</span>
+</div>
+<div class="bg-[#090810] p-4 space-y-2">
+<!-- Deletion -->
+<div class="flex items-start gap-3 bg-red-950/20 border border-red-500/20 p-2 rounded">
+<span class="text-red-400 font-bold select-none">-</span>
+<span class="text-on-surface-variant/50 select-none w-6 text-right">41</span>
+<span class="text-red-300 leading-relaxed line-through">
+  "Your team promised the Auth migration would be done last sprint. Why is this blocked?"
+</span>
+</div>
+<!-- Addition -->
+<div class="flex items-start gap-3 bg-purple-950/30 border border-purple-500/30 p-2 rounded">
+<span class="text-primary font-bold select-none">+</span>
+<span class="text-on-surface-variant/50 select-none w-6 text-right">41</span>
+<span class="text-white font-semibold leading-relaxed">
+  "To keep Auth migration on track without destabilizing sprint velocity, what dependencies can my team unblock today?"
+</span>
+</div>
+<div class="ml-9 p-2.5 rounded bg-purple-950/40 border border-purple-500/30 text-primary text-[11px] flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">lightbulb</span>
+<span class=""><strong>Tact Suggestion:</strong> Shifts framing from retrospective culpability to proactive joint resource allocation (+35% executive alignment).</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between text-xs font-label-code-sm text-on-surface-variant pt-4 border-t border-purple-900/20">
+<span class="">AST Latent Tokenizer: Active</span>
+<span class="text-secondary font-semibold">Parsed in 18ms</span>
+</div>
+</div>
+<!-- Card 3: Holographic Tact Passport -->
+<div class="lg:col-span-12 bg-gradient-to-br from-[#0f0e1a] via-[#0d0c16] to-[#090810] border border-purple-500/30 rounded-3xl p-8 lg:p-10 shadow-2xl transition-all duration-300 group ease-out hover:-translate-y-1.5 hover:border-purple-500/50 hover:shadow-[0_10px_30px_-10px_rgba(168,85,247,0.3)] cursor-pointer">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-6 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-tertiary/40 text-tertiary font-label-code-sm text-xs font-semibold uppercase">
+  Verifiable Career Credential
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white tracking-tight font-bold">
+  Shareable Holographic Tact Credential (99.2% Leverage Index)
+</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+  Every resolved incident grades your negotiation leverage, psychological safety stewardship, and consensus architecture. Export cryptographically verified skill badges to LinkedIn and GitHub.
+</p>
+<div class="grid grid-cols-3 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-[#141222] border border-purple-900/40 shadow-sm">
+<div class="text-2xl font-label-code-lg font-bold text-primary drop-shadow-[0_0_8px_#d0bcff]">Top 1.2%</div>
+<div class="text-xs text-on-surface-variant mt-1">Consensus Index</div>
+</div>
+<div class="p-4 rounded-xl bg-[#141222] border border-purple-900/40 shadow-sm">
+<div class="text-2xl font-label-code-lg font-bold text-tertiary drop-shadow-[0_0_8px_#4edea3]">98.4</div>
+<div class="text-xs text-on-surface-variant mt-1">Blameless Post-Mortem</div>
+</div>
+<div class="p-4 rounded-xl bg-[#141222] border border-purple-900/40 shadow-sm">
+<div class="text-2xl font-label-code-lg font-bold text-secondary drop-shadow-[0_0_8px_#4cd7f6]">Zero</div>
+<div class="text-xs text-on-surface-variant mt-1">Defensive Regressions</div>
+</div>
+</div>
+</div>
+<!-- Gyroscope-Ready Holographic Tact Card Element -->
+<div class="lg:col-span-6 flex justify-center [perspective:1000px]">
+<div class="w-full max-w-md bg-gradient-to-tr from-[#161326] via-[#12101e] to-[#1c1430] border border-purple-500/40 rounded-2xl p-6 shadow-[0_0_40px_rgba(124,58,237,0.35)] relative overflow-hidden transition-transform duration-200 ease-out hover:[transform:rotateY(10deg)_rotateX(-6deg)] cursor-pointer" id="holo-card" style="transform: rotateY(0deg) rotateX(0deg) scale(1);">
+<!-- Subtle Holographic Rainbow Sheen Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent pointer-events-none -translate-x-full hover:translate-x-full transition-transform duration-1000"></div>
+<div class="flex items-center justify-between pb-6 border-b border-purple-900/30">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-gradient-to-br from-primary-container to-purple-600 text-white flex items-center justify-center font-bold text-xs shadow-[0_0_8px_#7c3aed]">
+  L
+</div>
+<span class="font-headline-sm text-sm font-bold text-white tracking-wider">LUMINAR TACT PASSPORT</span>
+</div>
+<span class="font-label-code-sm text-[10px] px-2 py-0.5 rounded bg-emerald-950/80 text-tertiary font-bold tracking-wider uppercase border border-tertiary/40 shadow-[0_0_8px_rgba(78,222,163,0.3)]">
+  VERIFIED L6 STAFF
+</span>
+</div>
+<!-- Card Body Content -->
+<div class="flex items-center gap-4 py-4">
+<div class="w-16 h-16 rounded-2xl overflow-hidden ring-2 ring-purple-500/40">
+<img class="w-full h-full object-cover filter contrast-110" data-alt="Stylized monochrome engineering avatar portrait of a technical lead with sharp lighting and clean gradient background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAazYkReAUn4f4EgNWLD912XDhsvx5qkHZDOUctIZpV2AU7AnMaEF70j63vAoFWSpbiKxmsipnlm4yFjwMDBFx9omYFJPIC-QfnkE-WP6YB4gEEg_Leq3E26y5x_9CY8JJIs_6O_oxNd8u2RZkkFopsYQg53weo1uNLaNW-PIoZHjOpb9RWndzRI3WJ1E80SYTCbSB5KX84BjKTIEbwx7GL-rtiQ5wRqYP7hsNVGMHpCgXBVXNtaGf3sg">
+</div>
+<div>
+<h4 class="font-headline-sm text-base font-bold text-white">Elena Rostova</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Staff Platform Architect • Distributed Storage</p>
+<p class="font-label-code-sm text-[11px] text-primary font-medium mt-1">Tact Cohort: Series-D / Hyperscale</p>
+</div>
+</div>
+<div class="bg-[#0b0a12] border border-purple-900/40 rounded-xl p-3.5 my-4 space-y-2">
+<div class="flex items-center justify-between text-xs font-label-code-sm">
+<span class="text-on-surface-variant">Adversarial Resistance</span>
+<span class="font-bold text-white">Staff-Grade II (0.971)</span>
+</div>
+<div class="h-2 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container via-purple-500 to-secondary rounded-full w-[94%] shadow-[0_0_8px_#7c3aed]"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-[10px] font-label-code-sm text-on-surface-variant">
+<span class="">HASH: 0x9b4a...f721c</span>
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+  Cryptographically Anchored
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE LIVE DEMO WIDGET -->
+<section class="w-full max-w-container-max mx-auto px-gutter-desktop py-16" id="interactive-live-playground">
+<div class="bg-[#0e0d17] border border-purple-500/25 rounded-3xl p-8 lg:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.9)] relative overflow-hidden transition-all duration-500 hover:border-purple-500/50 group">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/10 blur-[100px] pointer-events-none rounded-full"></div>
+<div class="max-w-3xl mx-auto text-center mb-10 relative z-10">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/70 border border-purple-500/30 font-label-code-sm text-xs font-bold text-primary tracking-wide uppercase mb-3">
+  Interactive Live Playground
+</span>
+<h2 class="font-headline-lg text-headline-lg text-white tracking-tight font-bold">
+  Test Your Toughest Incident Draft
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+  Type an aggressive or defensive reply you recently wanted to send in Slack or PR comments. Watch the AST Tact Engine restructure it in real time.
+</p>
+</div>
+<!-- Live Input & Refactoring Interactive Box -->
+<div class="max-w-4xl mx-auto bg-[#141222] border border-purple-900/40 rounded-2xl p-6 shadow-xl relative z-10 hover:border-purple-500/40 transition-all duration-300">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Input Side -->
+<div class="flex flex-col">
+<label class="font-label-code-sm text-xs font-bold text-on-surface-variant uppercase mb-2 flex items-center justify-between" for="tact-input">
+<span class="">Your Unfiltered Draft:</span>
+<button class="text-primary hover:text-white text-[11px] cursor-pointer font-medium transition-colors" id="preset-btn" type="button">Load Incident Preset</button>
+</label>
+<textarea class="w-full p-4 rounded-xl bg-[#090810] text-white border border-purple-900/40 font-body-md text-sm shadow-inner focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all resize-none hover:border-purple-500/40" id="tact-input" placeholder="Type something prickly: 'I don't have time to fix your broken integration before release...'" rows="4"></textarea>
+<div class="mt-3 flex items-center justify-between">
+<span class="font-label-code-sm text-xs text-error font-medium flex items-center gap-1" id="input-sentiment">
+<span class="material-symbols-outlined text-sm">error</span>
+  Detected: Highly Prickly (-45pts)
+</span>
+<button class="px-4 py-2 rounded-lg bg-gradient-to-r from-primary-container to-purple-600 text-white font-headline-sm text-xs font-medium hover:brightness-110 transition-colors cursor-pointer flex items-center gap-1.5 shadow-[0_0_15px_rgba(124,58,237,0.4)] border border-purple-400/30 hover:-translate-y-1 active:scale-95" id="simulate-refactor-btn" type="button">
+<span class="material-symbols-outlined text-sm">auto_fix_high</span>
+<span class="">Refactor Tone</span>
+</button>
+</div>
+</div>
+<!-- Output Refactor Side -->
+<div class="flex flex-col">
+<div class="font-label-code-sm text-xs font-bold text-on-surface-variant uppercase mb-2 flex items-center justify-between">
+<span class="">Staff Engineer Refactoring:</span>
+<span class="font-label-code-sm text-xs text-tertiary font-bold drop-shadow-[0_0_6px_#4edea3]">+92 Tact Score</span>
+</div>
+<div class="w-full h-full min-h-[110px] p-4 rounded-xl bg-[#090810] border border-purple-900/40 text-white font-body-md text-sm shadow-inner flex flex-col justify-between hover:border-purple-500/40 transition-all duration-300" id="tact-output-box">
+<p class="text-white font-medium leading-relaxed" id="tact-output-text">
+  "I want to protect our release timeline while ensuring integration stability. Let's carve out 30 minutes at 2 PM to triage the schema mismatches together."
+</p>
+<div class="pt-3 mt-2 flex items-center justify-between text-xs font-label-code-sm text-tertiary border-t border-purple-900/30">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+  High Empathy • Boundary Preserved
+</span>
+<button class="text-on-surface-variant hover:text-white flex items-center gap-1 cursor-pointer transition-colors" id="copy-refactor-btn" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+<span class="">Copy</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Conversion Bottom Banner -->
+<div class="mt-12 text-center max-w-xl mx-auto flex flex-col items-center relative z-10">
+<h3 class="font-headline-md text-headline-md text-white mb-3 font-bold">
+  Eliminate the High Cost of Executive Miscommunication
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+  Deploy enterprise-wide roleplay simulations for engineering managers, staff ICs, and platform architects.
+</p>
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<button class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary-container via-purple-600 to-indigo-600 text-white font-headline-sm text-sm font-semibold hover:brightness-110 transition-all active:scale-[0.98] shadow-[0_0_25px_rgba(124,58,237,0.5)] border border-purple-400/40 cursor-pointer flex items-center gap-2 hover:-translate-y-1" type="button">
+<span class="">Start Free Incident Simulation</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="px-6 py-4 rounded-xl bg-[#141222] border border-purple-500/30 text-white font-headline-sm text-sm font-semibold hover:bg-[#1b182e] hover:border-purple-400/60 transition-all shadow-md cursor-pointer hover:-translate-y-1 duration-300" type="button">
+  Book Team Demo (SOC2 / SSO)
+</button>
+</div>
+<div class="flex items-center gap-6 mt-6 text-xs font-label-code-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">check</span>
+  Okta / SAML SSO
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">check</span>
+  Zero Data Retention
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">check</span>
+  No Credit Card Required
+</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Three.js Kinetic Tact Core Engine Script -->
+
+</main><footer class="w-full bg-[#08080c] border-t border-purple-900/30 mt-space-3xl"><div class="max-w-container-max mx-auto px-gutter-desktop py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-2xs"><img alt="Luminar Logo" class="h-4 w-auto object-contain opacity-70 filter drop-shadow-[0_0_6px_#a855f7]" src="/logo.png"><span class="font-body-sm text-body-sm font-semibold text-white">Luminar Labs</span></div><span class="">© 2025 Luminar Inc. Autonomous Tact Diagnostics.</span></div><div class="flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/40 border border-purple-500/20"><span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span><span class="font-label-code-sm text-xs text-on-surface-variant">All systems operational</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-white transition-colors" data-path="simulator" href="#">API Spec</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-white transition-colors" data-path="benchmarks" href="#">Telemetry Schema</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-white transition-colors" data-path="pricing" href="#">Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-white transition-colors" data-path="pricing" href="#">Changelog</a></div></div></div></footer>
+
+
+
