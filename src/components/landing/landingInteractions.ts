@@ -4,10 +4,14 @@ export function initLandingInteractions(containerEl: HTMLElement): () => void {
   // 1. Initialize Three.js 3D Tact Core
   const canvas = containerEl.querySelector("#tact-kinetic-canvas") as HTMLCanvasElement | null;
   const container = containerEl.querySelector("#tact-kinetic-container") as HTMLElement | null;
+  const fallbackEl = containerEl.querySelector("#tact-fallback-visual") as HTMLElement | null;
 
   let cleanupThree = () => {};
 
   if (canvas && container) {
+    if (fallbackEl) {
+      fallbackEl.style.display = "none";
+    }
     const width = container.clientWidth || 896;
     const height = container.clientHeight || 520;
 
@@ -252,6 +256,9 @@ export function initLandingInteractions(containerEl: HTMLElement): () => void {
       particleGeo.dispose();
       particleMat.dispose();
       renderer.dispose();
+      if (fallbackEl) {
+        fallbackEl.style.display = "";
+      }
     };
   }
 
